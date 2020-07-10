@@ -12,7 +12,7 @@ Java 1.8 <br>
 Maven <br>
 Mockito for Unit testing. 
 
-####`Implementation Steps`
+#### `Implementation Steps`
 
 After analyzing  the requirement, it is considered to use Graph data structure to compute the path between two cities where they are not directly connected
 
@@ -35,7 +35,7 @@ After analyzing  the requirement, it is considered to use Graph data structure t
    - http://localhost:8080/connected?origin=Philadelphia&destination=Trenton
    
 
-####`Unit Testing`
+#### `Unit Testing`
 
 [Test classes package](https://github.com/praveenkumarkalla/TravelPath/tree/master/src/test/java/com/flights/path).<br>
 Unit testing carried through Mockito framework, allows the creation of unit tests for the purpose of test-driven development (TDD).
@@ -46,14 +46,14 @@ Unit Test classes can run through maven build command or can be execute directly
  all the test cases passed.
  
 
-####`Build Status`
+#### `Build Status`
   - Success
 
-####`Code repository in GITHUB`
+#### `Code repository in GITHUB`
 
   - [TravelPath GITHUB url](https://github.com/praveenkumarkalla/TravelPath)
   
-####`Installation`
+#### `Installation`
 
   - Please clone above git repo or download the project zip file from github.
   - NO further config or settings needed.
@@ -66,7 +66,7 @@ Unit Test classes can run through maven build command or can be execute directly
         Tomcat started on port(s): 8080 (http) with context path<br>
         Started TravelPathApplication in 7.534 seconds (JVM running for 8.751)
         
-####`Screenshots For Proof`
+#### `Screenshots For Proof`
 
    - [Screenshots](https://github.com/praveenkumarkalla/TravelPath/blob/master/MC_assignment_screenshots.docx ) -
      screenshots of code snippet, unit test cases execution and api calls through postman are recorded in git document.
