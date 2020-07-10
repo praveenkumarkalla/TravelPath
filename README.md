@@ -17,18 +17,19 @@ Mockito for Unit testing.
 After analyzing  the requirement, it is considered to use Graph data structure to compute the path between two cities where they are not directly connected
 
 
-1. Given a text file consists of pair of cities in each line. The file is placed in below path.
-    - \resources\cities.txt
-2. Config file ReadCitiesFromFile.java reads the textfile and places all the cities in Graph data structure
-    - \src\main\java\com\flights\path\config\ReadCitiesFromFile.java
-3. Graph.java is used to construct a graph for the given cities and Search.java is used to traverse the graph in DFS(Depth First Search) algorithm.
-   - \src\main\java\com\flights\path\util\Graph.java
-   - \src\main\java\com\flights\path\util\Search.java
-4. An API is exposed through a rest controller web method - findCitiesPath() which takes 2 inputs origin and destination as Query Parameters 
-   - \src\main\java\com\flights\path\controller\CitiesPathController.java
-5. A service class is invoked from controller which process the inputs and send to Search class for computing the path of the cities.
-   - \src\main\java\com\flights\path\services\FindCitiesPathService.java
-6. Endpoints - test in postman.
+1. [Cities.txt](https://github.com/praveenkumarkalla/TravelPath/blob/master/src/main/resources/cities.txt) -
+    Given a text file consists of pair of cities in each line with comma(,) separated.
+2. [ReadCitiesFromFile.java](https://github.com/praveenkumarkalla/TravelPath/blob/master/src/main/java/com/flights/path/config/ReadCitiesFromFile.java) - 
+    Config file ReadCitiesFromFile.java reads the textfile and places all the cities in Graph data structure
+3. [Graph.java](https://github.com/praveenkumarkalla/TravelPath/blob/master/src\main\java\com\flights\path\util\Graph.java) -
+    is used to construct a graph for the given cities 
+4. [Search.java](https://github.com/praveenkumarkalla/TravelPath/blob/master/src\main\java\com\flights\path\util\Search.java) -
+    is used to traverse the graph in DFS(Depth First Search) algorithm.
+5. [CitiesPathController.java](https://github.com/praveenkumarkalla/TravelPath/blob/master/src\main\java\com\flights\path\controller\CitiesPathController.java) -
+    An API is exposed through a rest controller web method - findCitiesPath() which takes 2 inputs origin and destination as Query Parameters 
+6. [FindCitiesPathService.java](https://github.com/praveenkumarkalla/TravelPath/blob/master/src\main\java\com\flights\path\services\FindCitiesPathService.java) -
+    A service class is invoked from controller which process the inputs and send to Search class for computing the path of the cities.
+7. Endpoints - test in postman.
    - http://localhost:8080/connected?origin=Boston&destination=Newark
    - http://localhost:8080/connected?origin=New York&destination=Philadelphia
    - http://localhost:8080/connected?origin=Philadelphia&destination=Trenton
@@ -36,11 +37,10 @@ After analyzing  the requirement, it is considered to use Graph data structure t
 
 ####`Unit Testing`
 
+[Test classes package](https://github.com/praveenkumarkalla/TravelPath/tree/master/src/test/java/com/flights/path).<br>
 Unit testing carried through Mockito framework, allows the creation of unit tests for the purpose of test-driven development (TDD).
-Test cases are cover Only controller class for this project
-  - src\test\java\com\flights\path\controller\CitiesPathControllerTest.java
- 
- Unit Test classes can run through maven build command or can be execute directly from test class from intellij editor. 
+Test cases are cover Only controller class for this project.
+Unit Test classes can run through maven build command or can be execute directly from test class from intellij editor. 
   - />mvn clean install
  
  all the test cases passed.
@@ -51,7 +51,7 @@ Test cases are cover Only controller class for this project
 
 ####`Code repository in GITHUB`
 
-  - https://github.com/praveenkumarkalla/TravelPath
+  - [TravelPath GITHUB url](https://github.com/praveenkumarkalla/TravelPath)
   
 ####`Installation`
 
@@ -63,11 +63,11 @@ Test cases are cover Only controller class for this project
   - To execute the application please run below command from terminal 
         \TravelPath> java -jar target/TravelPath-0.0.1-SNAPSHOT.jar    
    Server will up running on 8080     
-        Tomcat started on port(s): 8080 (http) with context path ''<br>
+        Tomcat started on port(s): 8080 (http) with context path<br>
         Started TravelPathApplication in 7.534 seconds (JVM running for 8.751)
         
 ####`Screenshots For Proof`
 
-   - Screenshots of code snippet, unit test cases execution and api calls through postman are recorded below git document.
-   - https://github.com/praveenkumarkalla/TravelPath/blob/master/MC_assignment_screenshots.docx 
+   - [Screenshots](https://github.com/praveenkumarkalla/TravelPath/blob/master/MC_assignment_screenshots.docx ) -
+     screenshots of code snippet, unit test cases execution and api calls through postman are recorded in git document.
 
